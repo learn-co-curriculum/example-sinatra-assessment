@@ -1,0 +1,7 @@
+<% @bags.each do |bag| %>
+  <%= bag.name %><br />
+  <%= bag.capacity %> <br />
+  <a href="/bags/<%=bag.id%>/edit">Edit</a>
+  <br />
+  <br />
+<% end %>

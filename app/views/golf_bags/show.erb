@@ -1,0 +1,12 @@
+  <%= @bag.name %><br />
+  <%= @bag.capacity %> <br />
+
+  <h2>Clubs</h2>
+  <ul>
+  <% @bag.golf_clubs.each do |club| %>
+    <li><a href="/clubs/<%=club.id%>"><%= club.name %></a></li>
+  <% end%>
+  </ul>
+  <a href="/bags/<%=@bag.id%>/edit">Edit</a>
+  <br />
+  <br />

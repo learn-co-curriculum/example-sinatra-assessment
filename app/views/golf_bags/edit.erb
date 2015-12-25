@@ -1,0 +1,11 @@
+<h1>Edit <%= @bag.name %></h1>
+
+<form action="/bags/<%=@bag.id %>" method="POST">
+  <label> Bag Name </label>
+  <input type="text" name="name" value="<%=@bag.name %>"> </br>
+
+  <label> Bag Capacity </label>
+  <input type="number" name="capacity" value="<%=@bag.capacity %>"> </br>
+
+  <input type="submit" value="Update">
+</form>
